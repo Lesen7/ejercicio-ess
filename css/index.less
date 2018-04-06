@@ -1,0 +1,80 @@
+// out: index.min.css, compress: true, autoprefixer: true
+@maingrad: linear-gradient(red, darkred);
+@sidegrad: linear-gradient(black, black);
+@cleargrad: linear-gradient(to top right, silver, ghostwhite, ghostwhite, silver);
+@darkcol: red;
+@labelcol: white;
+@metalcol: ghostwhite;
+@mainmargin: 12%;
+@mainradius: 10px;
+
+.main {
+  background: @maingrad;
+  //border-radius: 2% 5% 2% 2%;
+  border-radius: 2%;
+  border-top-right-radius: 2% 10% 2% 2% / 2% 16% 2% 2%;
+  width: 600px;
+  height: 600px;
+}
+
+.shutter {
+  display: flex;
+  justify-content: flex-end;
+  background: @darkcol;
+  margin-left: 12%;
+  border-radius: @mainradius;
+  width: 60%;
+  height: 40%;
+}
+
+.cover {
+  display: flex;
+  justify-content: flex-end;
+  background: @cleargrad;
+  width: 70%;
+  height: 100%;
+  border-radius: @mainradius;
+}
+
+.access {
+  background: @darkcol;
+  width: 20%;
+  height: 70%;
+  margin-right: 10%;
+  margin-top: 20%;
+}
+
+.labelcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 97%;
+  height: 60%;
+  margin-top: 8%;
+}
+
+.writeprotect {
+  background: @labelcol;
+  width: 5%;
+  height: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 30%;
+  border: 0;
+}
+
+.label {
+  background: @labelcol;
+  width: 100%;
+  height: 75%;
+  border-radius: 10px;
+}
+
+.indicator {
+    background: @labelcol;
+    width: 5%;
+    height: 5%;
+    margin-left: 5%;
+    margin-top: 30%;
+    border: 0;
+}
